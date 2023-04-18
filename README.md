@@ -42,6 +42,11 @@ Hello from Docker!
  docker init
 ```
 
+This utility will walk you through creating the following files with sensible defaults for your project:
+  - .dockerignore
+  - Dockerfile
+  - docker-compose.yaml
+
 ## Modify the Dockerfile
 
 ```
