@@ -34,3 +34,60 @@ Hello from Docker!
 ```
 
 
+## Using Docker init
+
+### Run the following command:
+
+```bash
+ docker init
+```
+
+## Modify the Dockerfile
+
+```
+FROM python:3.8-alpine
+RUN mkdir /app
+ADD . /app
+WORKDIR /app
+CMD ["python3", "app.py"]
+```
+
+
+
+## Modify the Docker Compose file
+
+
+```
+ version: '3'
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    command: python3 app.py
+ ```
+ 
+ ## Running the container service
+ 
+ ```
+  docker compose up -d --build
+ ```
+ 
+ ## Accessing the Python app
+ 
+ ```
+ curl localhost:8080
+
+          ##         .
+    ## ## ##        ==
+ ## ## ## ## ##    ===
+/"""""""""""""""""\___/ ===
+{                       /  ===-
+\______ O           __/
+ \    \         __/
+  \____\_______/
+
+
+Hello from Docker!
+```
