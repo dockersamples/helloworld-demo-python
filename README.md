@@ -1,38 +1,26 @@
 # Hello World Python Demo for Docker Init
 
 
-## Prereq
+## Run the application
+You can simply use `python3 app.py` command.
 
-- Docker Desktop 4.18.0
+Those commands will start a http server listening on port `8080` 
+and if your request `http://localhost:8080` you'll see the following output: 
+```shell
+❯ curl http://localhost:8080
 
-## Clone the repository
+          ##         .
+    ## ## ##        ==
+ ## ## ## ## ##    ===
+/"""""""""""""""""\___/ ===
+{                       /  ===-
+\______ O           __/
+ \    \         __/
+  \____\_______/
 
-```python
- git clone https://github.com/dockersamples/helloworld-demo-python
-```
 
-## Running the Docker init 
-
-```
- docker init
-```
-
-It creates the following project structure:
-
-```
-tree -L 1
-.
-├── Dockerfile
-├── app.py
-├── docker-compose.yaml
-└── helloworld.py
-
-1 directory, 4 files
-```
-
-## Modifying the Dockerfile
+Hello from Docker!
 
 ```
 
-```
 
